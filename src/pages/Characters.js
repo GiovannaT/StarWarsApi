@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Navbar from "../components/Navbar";
 import "../index.css";
 
 const Characters = () => {
@@ -7,6 +8,7 @@ const Characters = () => {
   const [search, setSearch] = useState("");
   const [imgSource, setImgSource] = useState("");
   const [characters, setCharacters] = useState([]);
+  const [selectedSearchPage, setSelectedSearchPage] = useState();
   const [mainCharacter, setMainCharacter] = useState(selectedCharacter);
 
   const filteredCharacters = search
@@ -33,6 +35,14 @@ const Characters = () => {
       });
   }
 
+  function selectPage(index) {
+    setSelectedSearchPage(index);
+    var url = "https://swapi.dev/api/people/?page=" + index;
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => setCharacters(data.results));
+  }
+
   useEffect(() => {
     setPrincipalCharacter(11);
 
@@ -40,9 +50,14 @@ const Characters = () => {
       .then((response) => response.json())
       .then((data) => setCharacters(data.results));
   }, []);
+
   return (
-    <section id="characters">
-      <div className="characters w-screen h-screen grid grid-cols-3 items-end scroll-smooth">
+    <section
+      id="characters"
+      className="characters flex flex-col pt-10 items-center"
+    >
+      <Navbar></Navbar>
+      <div className="w-screen h-screen grid grid-cols-3 items-end scroll-smooth">
         <div className="justify-self-start self-end absolute z-20">
           <div className="flex items-end justify-end p-10">
             <h1 className="text-5xl font-lexend uppercase text-white font-bold">
@@ -109,7 +124,7 @@ const Characters = () => {
           </div>
         </div>
       </div>
-      <div className="w-screen h-screen bg-zinc-900">
+      <div className="w-screen h-fit bg-zinc-900">
         <div className="flex items-center">
           <input
             className="m-10 w-1/2 bg-zinc-700 rounded-sm p-2 focus:outline-none"
@@ -121,7 +136,7 @@ const Characters = () => {
             }}
           ></input>
         </div>
-        <div className="grid grid-cols-5 gap-4 px-10 h-screen">
+        <div className="grid grid-cols-5 gap-4 px-10 h-fit">
           {search
             ? filteredCharacters.map((filteredCharacter) => {
                 return (
@@ -149,6 +164,109 @@ const Characters = () => {
                   </div>
                 );
               })}
+        </div>
+        <div className="text-white font-lexend flex justify-center py-5">
+          <ul className="flex">
+            <div className="flex flex-col items-center justify-center">
+              <button
+                onClick={() => selectPage(1)}
+                className="p-2 hover:text-green-500"
+              >
+                1
+              </button>
+              {selectedSearchPage == 1 ? (
+                <div className="bg-green-500 w-2 h-2 animate-pulse rounded-full"></div>
+              ) : null}
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <button
+                onClick={() => selectPage(2)}
+                className="p-2 hover:text-green-500"
+              >
+                2
+              </button>
+              {selectedSearchPage == 2 ? (
+                <div className="bg-green-500 w-2 h-2 animate-pulse rounded-full"></div>
+              ) : null}
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <button
+                onClick={() => selectPage(3)}
+                className="p-2 hover:text-green-500"
+              >
+                3
+              </button>
+              {selectedSearchPage == 3 ? (
+                <div className="bg-green-500 w-2 h-2 animate-pulse rounded-full"></div>
+              ) : null}
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <button
+                onClick={() => selectPage(4)}
+                className="p-2 hover:text-green-500"
+              >
+                4
+              </button>
+              {selectedSearchPage == 4 ? (
+                <div className="bg-green-500 w-2 h-2 animate-pulse rounded-full"></div>
+              ) : null}
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <button
+                onClick={() => selectPage(5)}
+                className="p-2 hover:text-green-500"
+              >
+                5
+              </button>
+              {selectedSearchPage == 5 ? (
+                <div className="bg-green-500 w-2 h-2 animate-pulse rounded-full"></div>
+              ) : null}
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <button
+                onClick={() => selectPage(6)}
+                className="p-2 hover:text-green-500"
+              >
+                6
+              </button>
+              {selectedSearchPage == 6 ? (
+                <div className="bg-green-500 w-2 h-2 animate-pulse rounded-full"></div>
+              ) : null}
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <button
+                onClick={() => selectPage(7)}
+                className="p-2 hover:text-green-500"
+              >
+                7
+              </button>
+              {selectedSearchPage == 7 ? (
+                <div className="bg-green-500 w-2 h-2 animate-pulse rounded-full"></div>
+              ) : null}
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <button
+                onClick={() => selectPage(8)}
+                className="p-2 hover:text-green-500"
+              >
+                8
+              </button>
+              {selectedSearchPage == 8 ? (
+                <div className="bg-green-500 w-2 h-2 animate-pulse rounded-full"></div>
+              ) : null}
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <button
+                onClick={() => selectPage(9)}
+                className="p-2 hover:text-green-500"
+              >
+                9
+              </button>
+              {selectedSearchPage == 9 ? (
+                <div className="bg-green-500 w-2 h-2 animate-pulse rounded-full"></div>
+              ) : null}
+            </div>
+          </ul>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { RxPlus, RxCross1 } from "react-icons/rx";
 import * as Dialog from "@radix-ui/react-dialog";
 import { setCardImage } from "../utils/setCardImage";
+import Navbar from "../components/Navbar";
 
 const Films = () => {
   const [films, setFilms] = useState([]);
@@ -18,7 +19,8 @@ const Films = () => {
   }, []);
 
   return (
-    <section id="films" className="films flex w-fill h-screen p-10 items-center">
+    <section id="films" className="films flex flex-col w-fill h-screen p-10 items-center">
+      <Navbar></Navbar>
       <div className="flex items-center w-11/12 h-fit flex-nowrap overflow-auto overflow-x-scroll scroll-auto snap-x">
         {films.map((film) => {
           return (
