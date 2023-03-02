@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-display: none;
+  display: none;
 }
 
 .onboarding {
@@ -21,14 +21,14 @@ display: none;
   );
 }
 
-.films{
-    background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/698cef102940003.5f42432e1742e.png");
-    background-repeat: no-repeat;
-    background-size: 100vw;
+.films {
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/698cef102940003.5f42432e1742e.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 
 .DialogOverlay {
-  background-color: rgba(0,0,0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   inset: 0;
   animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -43,10 +43,10 @@ display: none;
   animation: contentShow 500ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.characters{
+.characters {
   background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/37aeda102940003.5f42432e19952.jpg");
   background-repeat: no-repeat;
-    background-size: 100vw;
+  background-size: 100vw;
 }
 
 @keyframes overlayShow {
@@ -68,6 +68,12 @@ display: none;
     transform: translate(-50%, -50%) scale(1);
   }
 }
-.ScrollAreaRoot{
+.ScrollAreaRoot {
   --scrollbar-size: 10px;
-  }
+}
+
+.species {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/8ab10c102940003.5f42432e168bb.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}

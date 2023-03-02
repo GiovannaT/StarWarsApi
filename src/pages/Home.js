@@ -37,8 +37,8 @@ const Home = () => {
             </Link>
           </div>
           <div className="onboarding-link hover:border hover:border-y-2 hover:border-x-0 transition-all duration-75 p-5 m-3  ">
-            <a
-              href="#species"
+            <Link
+              to="/species"
               className="flex flex-col items-center font-lexend text-3xl uppercase font-bold text-white"
             >
               <img
@@ -47,7 +47,7 @@ const Home = () => {
                 className="w-24 my-5"
               />
               Species
-            </a>
+            </Link>
           </div>
           <div className="onboarding-link hover:border hover:border-y-2 hover:border-x-0 transition-all duration-75 p-5 m-3  ">
             <a
