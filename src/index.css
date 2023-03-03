@@ -9,7 +9,7 @@
 .onboarding {
   background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/f1c91e102940003.5f42432e18d2b.jpg");
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 100vw 100vh;
 }
 
 .onboarding-link:hover {
@@ -24,7 +24,7 @@
 .films {
   background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/698cef102940003.5f42432e1742e.png");
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 100vw 100vh;
 }
 
 .DialogOverlay {
@@ -46,7 +46,7 @@
 .characters {
   background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/37aeda102940003.5f42432e19952.jpg");
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 100vw ;
 }
 
 @keyframes overlayShow {
@@ -75,5 +75,5 @@
 .species {
   background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/8ab10c102940003.5f42432e168bb.png");
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 100vw 100vh;
 }

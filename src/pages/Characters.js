@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import Navbar from "../components/Navbar";
+
 import "../index.css";
+import Navbar from "../components/Navbar";
 
 const Characters = () => {
   var selectedCharacter = useRef();
