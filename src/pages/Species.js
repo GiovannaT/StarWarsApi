@@ -33,7 +33,9 @@ const Species = () => {
     <>
       <div className="species w-screen h-screen flex">
         <section className="w-1/2 h-screen bg-zinc-900 text-3xl flex flex-col text-gray-400 font-lexend font-bold ">
-          <Navbar className="z-10"/>
+          <div className="px-10 pb-5 pt-10 z-10">
+          <Navbar/>
+          </div>
           {species.map((specie) => {
             return (
               <ul key={specie.url}>

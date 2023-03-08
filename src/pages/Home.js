@@ -51,7 +51,7 @@ const Home = () => {
           </div>
           <div className="onboarding-link hover:border hover:border-y-2 hover:border-x-0 transition-all duration-75 p-5 m-3  ">
             <a
-              href="#planets"
+              href="/planets"
               className="flex flex-col items-center font-lexend text-3xl uppercase font-bold text-white"
             >
               <img
@@ -64,7 +64,7 @@ const Home = () => {
           </div>
           <div className="onboarding-link hover:border hover:border-y-2 hover:border-x-0 transition-all duration-75 p-5 m-3  ">
             <a
-              href="#starships"
+              href="/starships"
               className="flex flex-col items-center font-lexend text-3xl uppercase font-bold text-white"
             >
               <img
@@ -77,7 +77,7 @@ const Home = () => {
           </div>
           <div className="onboarding-link hover:border hover:border-y-2 hover:border-x-0 transition-all duration-75 p-5 m-3  ">
             <a
-              href="#vehicles"
+              href="/vehicles"
               className="flex flex-col items-center font-lexend text-3xl uppercase font-bold text-white"
             >
               <img

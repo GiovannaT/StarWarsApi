@@ -77,3 +77,9 @@
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
 }
+
+.planets {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/4834a6102940003.5f42432e18809.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
