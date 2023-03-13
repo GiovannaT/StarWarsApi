@@ -3,83 +3,83 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 .onboarding {
-  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/f1c91e102940003.5f42432e18d2b.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+	background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/f1c91e102940003.5f42432e18d2b.jpg');
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
 }
 
 .onboarding-link:hover {
-  background: rgb(0, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(255, 255, 255, 0) 60%
-  );
+	background: rgb(0, 0, 0);
+	background: radial-gradient(
+		circle,
+		rgba(0, 0, 0, 0.2) 0%,
+		rgba(255, 255, 255, 0) 60%
+	);
 }
 
 .films {
-  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/698cef102940003.5f42432e1742e.png");
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+	background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/698cef102940003.5f42432e1742e.png');
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
 }
 
 .DialogOverlay {
-  background-color: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  inset: 0;
-  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	inset: 0;
+	animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .DialogContent {
-  font-family: lexend;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: contentShow 500ms cubic-bezier(0.16, 1, 0.3, 1);
+	font-family: lexend;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: contentShow 500ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .characters {
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/37aeda102940003.5f42432e19952.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vw ;
+	background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/37aeda102940003.5f42432e19952.jpg');
+	background-repeat: no-repeat;
+	background-size: 100vw;
 }
 
 @keyframes overlayShow {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes contentShow {
-  from {
-    opacity: 0;
-    transform: translate(-50%, -48%) scale(0.96);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
+	from {
+		opacity: 0;
+		transform: translate(-50%, -48%) scale(0.96);
+	}
+	to {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+	}
 }
 .ScrollAreaRoot {
-  --scrollbar-size: 10px;
+	--scrollbar-size: 10px;
 }
 
 .species {
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/8ab10c102940003.5f42432e168bb.png");
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+	background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/8ab10c102940003.5f42432e168bb.png');
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
 }
 
 .planets {
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/4834a6102940003.5f42432e18809.png");
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+	background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/4834a6102940003.5f42432e18809.png');
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
 }
